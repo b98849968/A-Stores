@@ -1,0 +1,163 @@
+button {
+  border: none;
+}
+
+.bottom-nav {
+  border-top: 1px solid var(--bordr-color);
+  border-bottom: 1px solid var(--bordr-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+
+.bottom-nav .login-ptn {
+  width: 20%;
+}
+
+.bottom-nav nav {
+  padding: 0 5%;
+  width: 30%;
+}
+.menu{
+  display: none !important;
+}
+.bottom-nav nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-nav nav ul li a {
+
+  color: var(--derk-color);
+
+}
+
+.bottom-nav nav ul li .lin-bottom {
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.bottom-nav nav ul li .lin-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background: var(--main-color);
+  width: 100%;
+  height: 3px;
+}
+
+.login-ptn button {
+  background: none;
+}
+
+.login-ptn button a {
+  border: none;
+  padding: 11px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--main-color);
+  border-radius: 10px;
+  color: var(--derk-color);
+  transition: 1s ease;
+}
+
+.login-ptn button a:hover {
+  background: none;
+  /* border:2px solid var(--main-color) ; */
+  background-color: var(--pren-color);
+  color: #ffff;
+}
+
+.login-ptn button a i {
+  padding-left: 5px;
+}
+
+@media (max-width: 1000px) {
+
+  .bottom-nav nav {
+    width: 45%;
+  }
+
+  .bottom-nav .login-ptn {
+    width: 25%;
+  }
+
+  .login-ptn button {
+    margin: 0 15px;
+  }
+
+}
+
+@media (max-width: 950px) {
+  .bottom-nav .login-ptn {
+    width: 33%;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .bottom-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 400px;
+    background: rgb(255, 255, 255);
+    border-right: 2px solid var(--bordr-color);
+    flex-direction: column;
+    z-index: 200;
+    transition: 1.4s ease;
+  
+  }
+  .menu{
+    display: block !important;
+  }
+#menu-icon1{
+  font-size: 20px;
+  padding: 10px;
+}
+  .bottom-nav.actives {
+    /* left: -100%; */
+    left: 0;
+  }
+
+  .bottom-nav .login-ptn {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-nav nav {
+    height: 60%;
+    width: 100%;
+  }
+
+  .bottom-nav nav ul {
+    flex-direction: column;
+    padding-top: 45px;
+    width: 100%;
+  }
+
+  .bottom-nav nav ul li {
+    padding: 35px 0;
+  }
+
+  nav i {
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 4px;
+    color: rgb(47, 47, 47);
+  }
+}
+@media(max-width:550px){
+  .bottom-nav{
+    width: 275px;
+  }
+}

@@ -1,0 +1,101 @@
+.content{
+ display: flex;
+ top: 70px;
+ justify-content: center;
+  margin-top: 20px;
+}
+.bodyLogin {
+  display: flex;
+  width: 310px;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 30px;
+  background: #ffff;
+  border-radius: 10px;
+  box-shadow: 1px 3px 21px rgba(18, 18, 18, 0.534);
+  height: auto;
+  align-items: center;
+}
+.bodyLogin h3 {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+.bodyLogin form .login-input {
+  padding: 9px;
+  margin: 10px 0 5px 0;
+  width: 94%;
+  font-size: 14px;
+}
+.bodyLogin form .forgot {
+  font-size: 14px;
+  text-align: right;
+  padding: 10px 0;
+}
+.bodyLogin form #login,.btn-login {
+  width: 100%;
+  padding: 7px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 4px;
+  color: var(--derk-color);
+  background-color: var(--main-color);
+  border: none;
+  box-shadow: 1px 3px 7px rgba(18, 18, 18, 0.534);
+  margin: 10px 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.bodyLogin form{
+  width: 90%;
+}
+form #login:hover {
+  background: var(--pren-color);
+  color: #ffff;
+  box-shadow: 1px 3px 7px var(--main-color);
+}
+.no-account{
+    font-size: 12px;
+}.no-account a{
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(189, 164, 0);
+
+}
+form .btn-login{
+    background: transparent;
+    border: 1px solid black;
+    margin-bottom:0 ;
+    transition: 1s ease;
+}
+form .btn-login:hover{
+    background: black;
+    color: #ffff;
+}
+form .btn-apple{
+    background: black;
+    color: #ffff;
+    transition: 1s ease;
+}
+form .btn-apple:hover{
+     background: transparent;
+    border: 1px solid black;
+    margin-bottom:0 ;
+     color: #000;
+
+}
+form .btn-login i{
+    font-size: 20px;
+    padding-right: 5px;
+}
+@media(max-width:750px){
+  .content{
+    margin-top: 100px;
+  }
+  .bodyLogin h3 {
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+.bodyLogin form {
+    width: 96%;
+}
+}

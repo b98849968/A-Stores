@@ -1,0 +1,90 @@
+.borgr-prodec-conecred {
+  display: none;
+  width: 400px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid var(--bordr-color);
+  position: fixed;
+  right: -36%;
+  top: 0;
+  transition: 1s ease;
+  z-index: 999999999;
+ 
+}
+
+.borgr-prodec-conecred.active {
+  right: 0;
+}
+.borgr-prodec-conecred .cart {
+  display: flex;
+  margin: 15px;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart-none {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--bordr-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+.cart .cart-none i {
+  font-size: 22px;
+}
+.cart .cart-none:hover {
+  background: var(--main-color);
+  color: aliceblue;
+}
+.cart-products {
+  overflow-y: auto;
+  height: 63vh;
+}
+.cart-products .cart-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid var(--bordr-color);
+}
+.cart-product .di-price {
+  width: 50%;
+}
+.cart-product img {
+  width: 65px;
+}
+.borgr-prodec-conecred .Subterotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--bordr-color);
+  font-size: 13px;
+}
+.borgr-prodec-conecred .cart-btn {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.borgr-prodec-conecred .cart-btn button {
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+.borgr-prodec-conecred .cart-btn #SHOP-btn {
+  background: var(--main-color);
+}
+.borgr-prodec-conecred .cart-btn #proceed-but {
+  border: 1px solid var(--main-color);
+}

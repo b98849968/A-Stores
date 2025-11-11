@@ -1,0 +1,69 @@
+.banner-sm-1,
+.banner-sm-2,
+.banner-sm-3 {
+    display: flex;
+
+}
+
+.banner-sm-1 .bann-sm-bac {
+    width: 280px;
+    box-shadow: 1px 1px 20px var(--derk-color);
+    border-radius: 10px;
+}
+
+.MyBanner-sm-1 {
+    width: 80%;
+}
+
+.banner-sm-2 .bann-sm-bac {
+    box-shadow: 1px 1px 20px var(--derk-color);
+    border-radius: 10px;
+}
+
+.MyBanner-sm-2 {
+    width: 80%;
+    width: 280px;
+}
+
+.slide-sale2,
+.slide-sale1,
+.slide-sale3 {
+    margin: 30px 41px;
+}
+
+
+@media (max-width: 1000px) {
+    .bann-sm-bac {
+        width: 251px !important;
+        height: 348px;
+    }
+
+    .slide-sale2,
+    .slide-sale1,
+    .slide-sale3 {
+        margin: 20px 27px;
+    }
+}
+
+@media (max-width: 885px) {
+
+    .slide-sale2,
+    .slide-sale1,
+    .slide-sale3 {
+        margin: 20px 16px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:550px) {
+
+    .banner-sm-1 .bann-sm-bac,
+    .banner-sm-2 .bann-sm-bac,
+    .banner-sm-3 .bann-sm-bac {
+        display: none;
+    }
+}

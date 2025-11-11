@@ -1,0 +1,169 @@
+.sale_sec {
+    margin-bottom: 100px;
+}
+
+.top_Slide {
+    position: relative;
+    margin: 0 20px 20px 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--bordr-color);
+}
+
+.top_Slide::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    bottom: -1px;
+    background: var(--main-color);
+}
+
+.img_hover {
+    position: absolute;
+    display: none;
+    transition: 5s ease;
+}
+
+.img_prodecrs {
+    position: relative;
+    display: flex;
+    height: 51%;
+
+}
+
+.img_prodecrs .ratio_prodet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+    background: rgb(68, 1, 1);
+    border-radius: 5px;
+}
+
+.ratio_prodet p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.img_prodecrs img {
+    width: 100%;
+}
+
+.top_Slide h2 {
+    text-transform: capitalize;
+
+}
+
+.top_Slide h2 span {
+    font-weight: normal;
+}
+
+.name_prodect a {
+    font-size: 14px;
+    color: #744900;
+}
+
+.ptodect {
+    position: relative;
+    padding: 10px 12px;
+    background: #fff;
+    max-width: 179px !important;
+    min-width: 149px !important;
+    height: 308px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(49, 49, 49);
+    border: 1px solid var(--bordr-color);
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.ptodect:hover .img_hover {
+    display: block;
+    height: 100%;
+}
+
+.prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices p {
+    padding: 6px;
+}
+
+.prices .old_price {
+    text-decoration: line-through;
+
+}
+
+.prices a i {
+    color: red;
+}
+
+.ptodect .stars {
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+.swiper {
+    margin: 1px 16px;
+    padding: 17px 0;
+}
+
+.card .content-card {
+    padding-top: 15px;
+}
+
+@media (max-width: 885px) {
+    .top_Slide {
+        margin: 0 20px 16px 12px;
+        padding: 13px 0;
+    }
+
+    .swiper {
+        margin: 1px 10px;
+    }
+}
+
+@media(max-width:650px) {
+    .top_Slide {
+        padding: 8px 0;
+    }
+
+}
+
+@media(max-width:550px) {
+    .ptodect {
+        max-width: 134px !important;
+        min-width: 141px !important;
+        height: 221px;
+    }
+
+    .card .content-card {
+        padding-top: 10px;
+    }
+
+    .card .content-card h4 {
+        font-size: 13px;
+    }
+
+    .card .content-card a {
+        font-size: 11px;
+    }
+
+    .prices p {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:450px) {
+    .slider {
+        height: 211px;
+    }
+
+    .slide img {
+        height: 211px;
+    }
+}

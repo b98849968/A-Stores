@@ -1,0 +1,81 @@
+form {
+    width: 90%;
+
+}
+
+.bodySiginUp {
+    width: 600px;
+}
+
+form .login-in {
+    padding: 5px;
+    margin: 10px 0 5px 0;
+    width: 45%;
+    font-size: 14px;
+    padding: 9px;
+}
+
+.login-in {
+    max-width: 300px;
+    min-width: 100px;
+}
+
+@media(max-width:650px) {
+    .bodySiginUp {
+        width: 495px;
+    }
+}
+
+@media(max-width:550px) {
+    .content {
+        margin-top: 58px;
+    }
+
+    .bodySiginUp form {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bodySiginUp {
+        width: 345px;
+    }
+
+    .bodyLogin h3 {
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+
+    form .login-in {
+        padding: 9px;
+        margin: 10px 0 7px 0;
+        width: 92%;
+        outline: 1px rgb(24, 23, 23) solid;
+        
+    }
+    form .login-in:focus{
+        outline: 2px black solid;
+
+    }
+
+    .bodyLogin form #login,
+    .btn-login {
+        margin: 7px 0;
+    }
+}
+
+@media(max-width: 400px) {
+
+
+    .bodySiginUp {
+        width: 296px;
+    }
+
+    .bodyLogin h3 {
+        font-size: 1.3rem;
+
+    }
+
+
+}
